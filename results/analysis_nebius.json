@@ -1,0 +1,2255 @@
+{
+  "run_id": 1,
+  "findings": [
+    {
+      "intent": "recon",
+      "malicious": true,
+      "severity": "low",
+      "confidence": 0.7,
+      "techniques": [
+        {
+          "id": "T1592",
+          "name": "Gather Victim Host Information"
+        }
+      ],
+      "summary": "Visitor systematically enumerated application endpoints including admin panels, shipment records, customer accounts, driver profiles, and vehicle VINs in a 4.5-second automated crawl.",
+      "indicators": [
+        "40 distinct paths in 4.5 seconds",
+        "sequential ID enumeration (customers/101-110, drivers/E1023-E1201)",
+        "access to admin/users and admin/audit",
+        "no scanner user-agent but machine-speed requests"
+      ],
+      "search_queries": [
+        "logistics management software admin panel exposure",
+        "vehicle VIN enumeration API vulnerability"
+      ],
+      "source": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "session_id": "1155961e9922977ed7ff94fd8afe5f6f",
+      "cves": [
+        {
+          "id": "CVE-2022-36760",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2022-28614",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2022-28330",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-41773",
+          "source": "https://blog.qualys.com/vulnerabilities-threat-research/2021/10/27/apache-http-server-path-traversal-remote-code-execution-cve-2021-41773-cve-2021-42013",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-42013",
+          "source": "https://blog.qualys.com/vulnerabilities-threat-research/2021/10/27/apache-http-server-path-traversal-remote-code-execution-cve-2021-41773-cve-2021-42013",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-42356",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-42528",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-46729",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-47360",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-48005",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56153",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56154",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56449",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-57941",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-58415",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-59685",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-59797",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63045",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63292",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63686",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63718",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-73636",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-73637",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-79768",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-93546",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-44790",
+          "source": "https://live.paloaltonetworks.com/t5/expedition-articles/guidance-for-apache-http-server-2-4-vulnerabilities/ta-p/565953",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        }
+      ]
+    },
+    {
+      "intent": "credential_attack",
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.9,
+      "techniques": [
+        {
+          "id": "T1110.001",
+          "name": "Password Guessing"
+        }
+      ],
+      "summary": "Visitor performed a credential stuffing attack against the login endpoint using a small list of common username/password pairs.",
+      "indicators": [
+        "6 POST /login attempts with default credentials",
+        "python-requests user agent"
+      ],
+      "search_queries": [
+        "default credentials admin/admin",
+        "common default passwords for web interfaces"
+      ],
+      "source": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "session_id": "0293f2744bf7348aaca88b8b9ad5d082",
+      "cves": [
+        {
+          "id": "CVE-2022-36760",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2022-28614",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2022-28330",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-41773",
+          "source": "https://blog.qualys.com/vulnerabilities-threat-research/2021/10/27/apache-http-server-path-traversal-remote-code-execution-cve-2021-41773-cve-2021-42013",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-42013",
+          "source": "https://blog.qualys.com/vulnerabilities-threat-research/2021/10/27/apache-http-server-path-traversal-remote-code-execution-cve-2021-41773-cve-2021-42013",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-42356",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-42528",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-46729",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-47360",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-48005",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56153",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56154",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56449",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-57941",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-58415",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-59685",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-59797",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63045",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63292",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63686",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63718",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-73636",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-73637",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-79768",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-93546",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-44790",
+          "source": "https://live.paloaltonetworks.com/t5/expedition-articles/guidance-for-apache-http-server-2-4-vulnerabilities/ta-p/565953",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        }
+      ]
+    },
+    {
+      "intent": "vuln_scanning",
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.9,
+      "techniques": [
+        {
+          "id": "T1595.002",
+          "name": "Vulnerability Scanning"
+        }
+      ],
+      "summary": "Automated scanner (Nikto) probed for admin panels, sensitive files (.env, git config, backups), and injected SQLi, path traversal, and XSS payloads against login and admin endpoints.",
+      "indicators": [
+        "scanner user agent Nikto",
+        "requests for /.env, /phpmyadmin/, /admin, /login",
+        "SQLi payload id=1'",
+        "path traversal payload file=../../../../etc/passwd",
+        "XSS payload q=<script>alert(1)</script>"
+      ],
+      "search_queries": [
+        "Nikto scanner vulnerability scanning",
+        "phpMyAdmin unauthenticated access CVE"
+      ],
+      "source": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "session_id": "a20e167708a4e6e0d2124273a62ee03a",
+      "cves": [
+        {
+          "id": "CVE-2022-0813",
+          "source": "https://www.sentinelone.com/vulnerability-database/cve-2022-0813",
+          "query": "phpMyAdmin unauthenticated access CVE"
+        },
+        {
+          "id": "CVE-2018-12613",
+          "source": "https://www.rapid7.com/db/vulnerabilities/phpmyadmin-cve-2018-12613",
+          "query": "phpMyAdmin unauthenticated access CVE"
+        },
+        {
+          "id": "CVE-2024-2961",
+          "source": "https://www.phpmyadmin.net/security/PMASA-2025-3",
+          "query": "phpMyAdmin unauthenticated access CVE"
+        },
+        {
+          "id": "CVE-2022-36760",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2022-28614",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2022-28330",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-41773",
+          "source": "https://blog.qualys.com/vulnerabilities-threat-research/2021/10/27/apache-http-server-path-traversal-remote-code-execution-cve-2021-41773-cve-2021-42013",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-42013",
+          "source": "https://blog.qualys.com/vulnerabilities-threat-research/2021/10/27/apache-http-server-path-traversal-remote-code-execution-cve-2021-41773-cve-2021-42013",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-42356",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-42528",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-46729",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-47360",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-48005",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56153",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56154",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56449",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-57941",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-58415",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-59685",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-59797",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63045",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63292",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63686",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63718",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-73636",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-73637",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-79768",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-93546",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-44790",
+          "source": "https://live.paloaltonetworks.com/t5/expedition-articles/guidance-for-apache-http-server-2-4-vulnerabilities/ta-p/565953",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        }
+      ]
+    },
+    {
+      "intent": "vuln_scanning",
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.9,
+      "techniques": [
+        {
+          "id": "T1595.002",
+          "name": "Vulnerability Scanning"
+        }
+      ],
+      "summary": "Visitor used Nmap Scripting Engine to probe for admin panels, sensitive files (.env, .git/config, backup.zip), and phpMyAdmin, receiving 200 responses for root and .env.",
+      "indicators": [
+        "Nmap Scripting Engine user agent",
+        "GET /.env returned 200",
+        "probed /phpmyadmin/",
+        "probed /admin and /administrator",
+        "probed /.git/config and /backup.zip"
+      ],
+      "search_queries": [
+        "Nmap NSE http enumeration scripts",
+        "phpMyAdmin unauthenticated access CVE"
+      ],
+      "source": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "session_id": "d608577a3e6b303eca25871c3cd60949",
+      "cves": [
+        {
+          "id": "CVE-2022-0813",
+          "source": "https://www.sentinelone.com/vulnerability-database/cve-2022-0813",
+          "query": "phpMyAdmin unauthenticated access CVE"
+        },
+        {
+          "id": "CVE-2018-12613",
+          "source": "https://www.rapid7.com/db/vulnerabilities/phpmyadmin-cve-2018-12613",
+          "query": "phpMyAdmin unauthenticated access CVE"
+        },
+        {
+          "id": "CVE-2024-2961",
+          "source": "https://www.phpmyadmin.net/security/PMASA-2025-3",
+          "query": "phpMyAdmin unauthenticated access CVE"
+        },
+        {
+          "id": "CVE-2022-36760",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2022-28614",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2022-28330",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-41773",
+          "source": "https://blog.qualys.com/vulnerabilities-threat-research/2021/10/27/apache-http-server-path-traversal-remote-code-execution-cve-2021-41773-cve-2021-42013",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-42013",
+          "source": "https://blog.qualys.com/vulnerabilities-threat-research/2021/10/27/apache-http-server-path-traversal-remote-code-execution-cve-2021-41773-cve-2021-42013",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-42356",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-42528",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-46729",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-47360",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-48005",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56153",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56154",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56449",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-57941",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-58415",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-59685",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-59797",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63045",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63292",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63686",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63718",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-73636",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-73637",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-79768",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-93546",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-44790",
+          "source": "https://live.paloaltonetworks.com/t5/expedition-articles/guidance-for-apache-http-server-2-4-vulnerabilities/ta-p/565953",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        }
+      ]
+    },
+    {
+      "intent": "recon",
+      "malicious": true,
+      "severity": "low",
+      "confidence": 0.7,
+      "techniques": [
+        {
+          "id": "T1592",
+          "name": "Gather Victim Host Information"
+        }
+      ],
+      "summary": "Visitor systematically enumerated application endpoints including admin panels and specific resource IDs across shipments, customers, drivers, and vehicles in 4.4 seconds.",
+      "indicators": [
+        "40 distinct paths in 4.4 seconds",
+        "accessed admin/users and admin/audit",
+        "sequential ID enumeration (customers 101-110, drivers E1023-E1201)",
+        "no scanner user agent but automated speed"
+      ],
+      "search_queries": [
+        "logistics management software admin panel bypass",
+        "shipment tracking system IDOR vulnerability"
+      ],
+      "source": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "session_id": "a147adfe48fcc9ff8619e2467383bab8",
+      "cves": [
+        {
+          "id": "CVE-2022-36760",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2022-28614",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2022-28330",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-41773",
+          "source": "https://blog.qualys.com/vulnerabilities-threat-research/2021/10/27/apache-http-server-path-traversal-remote-code-execution-cve-2021-41773-cve-2021-42013",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-42013",
+          "source": "https://blog.qualys.com/vulnerabilities-threat-research/2021/10/27/apache-http-server-path-traversal-remote-code-execution-cve-2021-41773-cve-2021-42013",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-42356",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-42528",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-46729",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-47360",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-48005",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56153",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56154",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56449",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-57941",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-58415",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-59685",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-59797",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63045",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63292",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63686",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63718",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-73636",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-73637",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-79768",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-93546",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-44790",
+          "source": "https://live.paloaltonetworks.com/t5/expedition-articles/guidance-for-apache-http-server-2-4-vulnerabilities/ta-p/565953",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        }
+      ]
+    },
+    {
+      "intent": "credential_attack",
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.9,
+      "techniques": [
+        {
+          "id": "T1110.001",
+          "name": "Password Guessing"
+        }
+      ],
+      "summary": "Visitor performed a credential stuffing attack against the login endpoint, trying six common username/password pairs in rapid succession.",
+      "indicators": [
+        "POST /login with default credentials",
+        "user agent identifies python-requests scanner",
+        "six login attempts in 18 seconds"
+      ],
+      "search_queries": [
+        "default admin credentials login bypass"
+      ],
+      "source": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "session_id": "b7bb036738dc7410f673f4c56bb7362d",
+      "cves": [
+        {
+          "id": "CVE-2022-36760",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2022-28614",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2022-28330",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-41773",
+          "source": "https://blog.qualys.com/vulnerabilities-threat-research/2021/10/27/apache-http-server-path-traversal-remote-code-execution-cve-2021-41773-cve-2021-42013",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-42013",
+          "source": "https://blog.qualys.com/vulnerabilities-threat-research/2021/10/27/apache-http-server-path-traversal-remote-code-execution-cve-2021-41773-cve-2021-42013",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-42356",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-42528",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-46729",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-47360",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-48005",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56153",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56154",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56449",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-57941",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-58415",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-59685",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-59797",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63045",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63292",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63686",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63718",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-73636",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-73637",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-79768",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-93546",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-44790",
+          "source": "https://live.paloaltonetworks.com/t5/expedition-articles/guidance-for-apache-http-server-2-4-vulnerabilities/ta-p/565953",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        }
+      ]
+    },
+    {
+      "intent": "vuln_scanning",
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.9,
+      "techniques": [
+        {
+          "id": "T1595.002",
+          "name": "Vulnerability Scanning"
+        }
+      ],
+      "summary": "Automated scanner probed for admin panels, sensitive files (.env, config, backups), and injected SQLi, path traversal, and XSS payloads against login and admin endpoints.",
+      "indicators": [
+        "scanner user agent (Nikto)",
+        "requests for /.env, /admin, /phpmyadmin, /backup.zip",
+        "SQLi payloads (id=1')",
+        "path traversal payloads (../../../../etc/passwd)",
+        "XSS payloads (<script>alert(1)</script>)"
+      ],
+      "search_queries": [
+        "Nikto scanner vulnerabilities",
+        "phpMyAdmin unauthenticated access CVE"
+      ],
+      "source": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "session_id": "e74a84f5f5682a253064e9199acb63cf",
+      "cves": [
+        {
+          "id": "CVE-2022-0813",
+          "source": "https://www.sentinelone.com/vulnerability-database/cve-2022-0813",
+          "query": "phpMyAdmin unauthenticated access CVE"
+        },
+        {
+          "id": "CVE-2018-12613",
+          "source": "https://www.rapid7.com/db/vulnerabilities/phpmyadmin-cve-2018-12613",
+          "query": "phpMyAdmin unauthenticated access CVE"
+        },
+        {
+          "id": "CVE-2024-2961",
+          "source": "https://www.phpmyadmin.net/security/PMASA-2025-3",
+          "query": "phpMyAdmin unauthenticated access CVE"
+        },
+        {
+          "id": "CVE-2022-36760",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2022-28614",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2022-28330",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-41773",
+          "source": "https://blog.qualys.com/vulnerabilities-threat-research/2021/10/27/apache-http-server-path-traversal-remote-code-execution-cve-2021-41773-cve-2021-42013",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-42013",
+          "source": "https://blog.qualys.com/vulnerabilities-threat-research/2021/10/27/apache-http-server-path-traversal-remote-code-execution-cve-2021-41773-cve-2021-42013",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-42356",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-42528",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-46729",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-47360",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-48005",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56153",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56154",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56449",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-57941",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-58415",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-59685",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-59797",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63045",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63292",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63686",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63718",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-73636",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-73637",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-79768",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-93546",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-44790",
+          "source": "https://live.paloaltonetworks.com/t5/expedition-articles/guidance-for-apache-http-server-2-4-vulnerabilities/ta-p/565953",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        }
+      ]
+    },
+    {
+      "intent": "vuln_scanning",
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.9,
+      "techniques": [
+        {
+          "id": "T1595.002",
+          "name": "Vulnerability Scanning"
+        }
+      ],
+      "summary": "Automated scanner (Nmap NSE) probed for admin panels, sensitive files (.env, .git/config, backup.zip), and phpMyAdmin, retrieving a valid .env file.",
+      "indicators": [
+        "Nmap Scripting Engine user agent",
+        "GET /.env returned 200",
+        "probed /phpmyadmin/",
+        "probed /admin and /administrator",
+        "probed /.git/config and /backup.zip"
+      ],
+      "search_queries": [
+        "Nmap NSE http-enum script",
+        "exposed .env file vulnerability"
+      ],
+      "source": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "session_id": "420d2a5c1119ad58d88567e060f15d7f",
+      "cves": [
+        {
+          "id": "CVE-2022-36760",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2022-28614",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2022-28330",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-41773",
+          "source": "https://blog.qualys.com/vulnerabilities-threat-research/2021/10/27/apache-http-server-path-traversal-remote-code-execution-cve-2021-41773-cve-2021-42013",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-42013",
+          "source": "https://blog.qualys.com/vulnerabilities-threat-research/2021/10/27/apache-http-server-path-traversal-remote-code-execution-cve-2021-41773-cve-2021-42013",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-42356",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-42528",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-46729",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-47360",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-48005",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56153",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56154",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56449",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-57941",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-58415",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-59685",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-59797",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63045",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63292",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63686",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63718",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-73636",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-73637",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-79768",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-93546",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-44790",
+          "source": "https://live.paloaltonetworks.com/t5/expedition-articles/guidance-for-apache-http-server-2-4-vulnerabilities/ta-p/565953",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        }
+      ]
+    },
+    {
+      "intent": "recon",
+      "malicious": true,
+      "severity": "low",
+      "confidence": 0.75,
+      "techniques": [
+        {
+          "id": "T1592",
+          "name": "Gather Victim Host Information"
+        }
+      ],
+      "summary": "Visitor systematically enumerated application endpoints including admin panels and specific resource IDs across shipments, customers, drivers, and vehicles, indicating reconnaissance of a logistics management system.",
+      "indicators": [
+        "sequential ID enumeration across multiple resources",
+        "access to admin/users and admin/audit paths",
+        "40 distinct paths in 122 seconds",
+        "no scanner user agent but automated traversal pattern"
+      ],
+      "search_queries": [
+        "logistics management software admin panel vulnerabilities",
+        "shipment tracking system IDOR vulnerabilities"
+      ],
+      "source": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "session_id": "75e0e4a82b841f0fcc77c3b9f8ea4d20",
+      "cves": [
+        {
+          "id": "CVE-2023-34362",
+          "source": "https://www.armosec.io/blog/software-supply-chain-security",
+          "query": "logistics management software admin panel vulnerabilities"
+        },
+        {
+          "id": "CVE-2025-65647",
+          "source": "https://www.sentinelone.com/vulnerability-database/cve-2025-65647",
+          "query": "shipment tracking system IDOR vulnerabilities"
+        },
+        {
+          "id": "CVE-2022-36760",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2022-28614",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2022-28330",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-41773",
+          "source": "https://blog.qualys.com/vulnerabilities-threat-research/2021/10/27/apache-http-server-path-traversal-remote-code-execution-cve-2021-41773-cve-2021-42013",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-42013",
+          "source": "https://blog.qualys.com/vulnerabilities-threat-research/2021/10/27/apache-http-server-path-traversal-remote-code-execution-cve-2021-41773-cve-2021-42013",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-42356",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-42528",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-46729",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-47360",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-48005",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56153",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56154",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56449",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-57941",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-58415",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-59685",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-59797",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63045",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63292",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63686",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63718",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-73636",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-73637",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-79768",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-93546",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-44790",
+          "source": "https://live.paloaltonetworks.com/t5/expedition-articles/guidance-for-apache-http-server-2-4-vulnerabilities/ta-p/565953",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        }
+      ]
+    },
+    {
+      "intent": "credential_attack",
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.9,
+      "techniques": [
+        {
+          "id": "T1110.001",
+          "name": "Password Guessing"
+        }
+      ],
+      "summary": "Visitor used a Python script to perform a credential stuffing attack against the login endpoint, trying six common username/password pairs in rapid succession.",
+      "indicators": [
+        "POST /login with multiple credential pairs",
+        "user agent identifies python-requests library",
+        "six login attempts in 18 seconds"
+      ],
+      "search_queries": [
+        "default credentials admin/admin",
+        "common default passwords for web applications"
+      ],
+      "source": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "session_id": "fd7bd52b3812144c44aa7917a1aed600",
+      "cves": [
+        {
+          "id": "CVE-2022-36760",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2022-28614",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2022-28330",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-41773",
+          "source": "https://blog.qualys.com/vulnerabilities-threat-research/2021/10/27/apache-http-server-path-traversal-remote-code-execution-cve-2021-41773-cve-2021-42013",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-42013",
+          "source": "https://blog.qualys.com/vulnerabilities-threat-research/2021/10/27/apache-http-server-path-traversal-remote-code-execution-cve-2021-41773-cve-2021-42013",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-42356",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-42528",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-46729",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-47360",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-48005",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56153",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56154",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56449",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-57941",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-58415",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-59685",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-59797",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63045",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63292",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63686",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63718",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-73636",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-73637",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-79768",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-93546",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-44790",
+          "source": "https://live.paloaltonetworks.com/t5/expedition-articles/guidance-for-apache-http-server-2-4-vulnerabilities/ta-p/565953",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        }
+      ]
+    },
+    {
+      "intent": "vuln_scanning",
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.9,
+      "techniques": [
+        {
+          "id": "T1595.002",
+          "name": "Vulnerability Scanning"
+        }
+      ],
+      "summary": "Automated scanner probed for admin panels, sensitive files (.env, backups, git config), and API endpoints, then injected SQLi, path traversal, and XSS payloads against discovered endpoints.",
+      "indicators": [
+        "scanner user agent (Nikto)",
+        "requests for /.env, /phpmyadmin/, /backup.zip, /server-status",
+        "SQLi probes (id=1')",
+        "path traversal probes (file=../../../../etc/passwd)",
+        "XSS probes (q=<script>alert(1)</script>)"
+      ],
+      "search_queries": [
+        "Nikto scanner vulnerability scanning",
+        "phpMyAdmin unauthenticated access CVE"
+      ],
+      "source": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "session_id": "6a7aeb011760b274626b747f436bf4ef",
+      "cves": [
+        {
+          "id": "CVE-2022-0813",
+          "source": "https://www.sentinelone.com/vulnerability-database/cve-2022-0813",
+          "query": "phpMyAdmin unauthenticated access CVE"
+        },
+        {
+          "id": "CVE-2018-12613",
+          "source": "https://www.rapid7.com/db/vulnerabilities/phpmyadmin-cve-2018-12613",
+          "query": "phpMyAdmin unauthenticated access CVE"
+        },
+        {
+          "id": "CVE-2024-2961",
+          "source": "https://www.phpmyadmin.net/security/PMASA-2025-3",
+          "query": "phpMyAdmin unauthenticated access CVE"
+        },
+        {
+          "id": "CVE-2022-36760",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2022-28614",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2022-28330",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-41773",
+          "source": "https://blog.qualys.com/vulnerabilities-threat-research/2021/10/27/apache-http-server-path-traversal-remote-code-execution-cve-2021-41773-cve-2021-42013",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-42013",
+          "source": "https://blog.qualys.com/vulnerabilities-threat-research/2021/10/27/apache-http-server-path-traversal-remote-code-execution-cve-2021-41773-cve-2021-42013",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-42356",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-42528",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-46729",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-47360",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-48005",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56153",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56154",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56449",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-57941",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-58415",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-59685",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-59797",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63045",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63292",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63686",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63718",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-73636",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-73637",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-79768",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-93546",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-44790",
+          "source": "https://live.paloaltonetworks.com/t5/expedition-articles/guidance-for-apache-http-server-2-4-vulnerabilities/ta-p/565953",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        }
+      ]
+    },
+    {
+      "intent": "vuln_scanning",
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.9,
+      "techniques": [
+        {
+          "id": "T1595.002",
+          "name": "Vulnerability Scanning"
+        }
+      ],
+      "summary": "Visitor used Nmap Scripting Engine to probe for admin panels, sensitive files (.env, .git/config, backup.zip), and phpMyAdmin, indicating automated vulnerability scanning.",
+      "indicators": [
+        "user agent identifies Nmap Scripting Engine",
+        "requests for /.env and /.git/config",
+        "probing /phpmyadmin/",
+        "multiple admin panel paths tested"
+      ],
+      "search_queries": [
+        "Nmap Scripting Engine http-vuln scanning",
+        "phpMyAdmin unauthenticated access CVE"
+      ],
+      "source": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "session_id": "50d338a4566ae71e5634868a57a939a9",
+      "cves": [
+        {
+          "id": "CVE-2013-0156",
+          "source": "https://nmap.org/nsedoc/categories/vuln.html",
+          "query": "Nmap Scripting Engine http-vuln scanning"
+        },
+        {
+          "id": "CVE-2013-6786",
+          "source": "https://nmap.org/nsedoc/categories/vuln.html",
+          "query": "Nmap Scripting Engine http-vuln scanning"
+        },
+        {
+          "id": "CVE-2014-2126",
+          "source": "https://nmap.org/nsedoc/categories/vuln.html",
+          "query": "Nmap Scripting Engine http-vuln scanning"
+        },
+        {
+          "id": "CVE-2014-2127",
+          "source": "https://nmap.org/nsedoc/categories/vuln.html",
+          "query": "Nmap Scripting Engine http-vuln scanning"
+        },
+        {
+          "id": "CVE-2014-2128",
+          "source": "https://nmap.org/nsedoc/categories/vuln.html",
+          "query": "Nmap Scripting Engine http-vuln scanning"
+        },
+        {
+          "id": "CVE-2022-0813",
+          "source": "https://www.sentinelone.com/vulnerability-database/cve-2022-0813",
+          "query": "phpMyAdmin unauthenticated access CVE"
+        },
+        {
+          "id": "CVE-2018-12613",
+          "source": "https://www.rapid7.com/db/vulnerabilities/phpmyadmin-cve-2018-12613",
+          "query": "phpMyAdmin unauthenticated access CVE"
+        },
+        {
+          "id": "CVE-2024-2961",
+          "source": "https://www.phpmyadmin.net/security/PMASA-2025-3",
+          "query": "phpMyAdmin unauthenticated access CVE"
+        },
+        {
+          "id": "CVE-2022-36760",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2022-28614",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2022-28330",
+          "source": "https://httpd.apache.org/security/vulnerabilities_24.html",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-41773",
+          "source": "https://blog.qualys.com/vulnerabilities-threat-research/2021/10/27/apache-http-server-path-traversal-remote-code-execution-cve-2021-41773-cve-2021-42013",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-42013",
+          "source": "https://blog.qualys.com/vulnerabilities-threat-research/2021/10/27/apache-http-server-path-traversal-remote-code-execution-cve-2021-41773-cve-2021-42013",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-42356",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-42528",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-46729",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-47360",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-48005",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56153",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56154",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-56449",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-57941",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-58415",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-59685",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-59797",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63045",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63292",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63686",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-63718",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-73636",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-73637",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-79768",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2026-93546",
+          "source": "https://www.tenable.com/plugins/nessus/362655",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        },
+        {
+          "id": "CVE-2021-44790",
+          "source": "https://live.paloaltonetworks.com/t5/expedition-articles/guidance-for-apache-http-server-2-4-vulnerabilities/ta-p/565953",
+          "query": "Apache 2.4.54 vulnerabilities CVE"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "id": 1,
+      "kind": "nginx",
+      "title": "Rapid sequential ID enumeration",
+      "status": "rejected",
+      "tp": 78,
+      "fp": 1,
+      "total": 319,
+      "sessions_hit": 3,
+      "attempts": 3,
+      "group": "recon",
+      "text": "# Rapid sequential ID enumeration\n# Matches the automated crawl pattern: rapid sequential requests to resource-specific endpoints (shipments/PRO-, customers/101-110, drivers/E10) using a distinctive scanner User-Agent (AppleWebKit/537.3\nset $mr_1748085 \"\";\nif ($request_method = GET) { set $mr_1748085 \"${mr_1748085}M\"; }\nif ($uri ~* \"^/(shipments|customers|drivers)/[A-Z0-9-]+$\") { set $mr_1748085 \"${mr_1748085}P\"; }\nif ($http_user_agent ~* \"AppleWebKit/537\\\\.36 \\\\(KHTML\") { set $mr_1748085 \"${mr_1748085}U\"; }\nif ($mr_1748085 = \"MPU\") { return 403; }",
+      "brittle": false
+    },
+    {
+      "id": 2,
+      "kind": "modsecurity",
+      "title": "Rapid sequential ID enumeration",
+      "status": "rejected",
+      "tp": 78,
+      "fp": 1,
+      "total": 319,
+      "sessions_hit": 3,
+      "attempts": 3,
+      "group": "recon",
+      "text": "# Rapid sequential ID enumeration\nSecRule REQUEST_METHOD \"@streq GET\" \"id:1748085,phase:1,deny,status:403,log,msg:'Rapid sequential ID enumeration',chain\"\n    SecRule REQUEST_FILENAME \"@rx (?i)^/(shipments|customers|drivers)/[A-Z0-9-]+$\" \"t:none,chain\"\n    SecRule REQUEST_HEADERS:User-Agent \"@rx (?i)AppleWebKit/537\\.36 \\(KHTML\" \"t:none\"",
+      "brittle": false
+    },
+    {
+      "id": 3,
+      "kind": "sigma",
+      "title": "Rapid sequential ID enumeration",
+      "status": "rejected",
+      "tp": 78,
+      "fp": 1,
+      "total": 319,
+      "sessions_hit": 3,
+      "attempts": 3,
+      "group": "recon",
+      "text": "title: 'Rapid sequential ID enumeration'\nid: a5f25475-a595-5acd-922d-2840658c6034\nstatus: experimental\ndescription: 'Matches the automated crawl pattern: rapid sequential requests to resource-specific endpoints (shipments/PRO-, customers/101-110, drivers/E10) using a distinctive scanner User-Agent (AppleWebKit/537.3'\nauthor: Mirage honeypot analyst\nlogsource:\n    category: webserver\ndetection:\n  selection:\n    cs-method: GET\n    c-uri|re: '(?i)^/(shipments|customers|drivers)/[A-Z0-9-]+$'\n    cs-user-agent|re: '(?i)AppleWebKit/537\\.36 \\(KHTML'\n  condition: selection\nlevel: medium\ntags:\n    - attack.t1595.002",
+      "brittle": false
+    },
+    {
+      "id": 4,
+      "kind": "nginx",
+      "title": "Credential stuffing with common weak passwords",
+      "status": "verified",
+      "tp": 18,
+      "fp": 0,
+      "total": 319,
+      "sessions_hit": 3,
+      "attempts": 1,
+      "group": "credential_attack",
+      "text": "# Credential stuffing with common weak passwords\n# Matches POST requests to the login endpoint submitting well-known default or weak credential pairs (admin/admin, admin/password, admin/123456, root/toor, administrator/Welcome1, test/test) which are c\n# not expressible in stock nginx (needs request-body inspection); use the ModSecurity rule",
+      "brittle": false
+    },
+    {
+      "id": 5,
+      "kind": "modsecurity",
+      "title": "Credential stuffing with common weak passwords",
+      "status": "verified",
+      "tp": 18,
+      "fp": 0,
+      "total": 319,
+      "sessions_hit": 3,
+      "attempts": 1,
+      "group": "credential_attack",
+      "text": "# Credential stuffing with common weak passwords\n# requires: SecRequestBodyAccess On\nSecRule REQUEST_METHOD \"@streq POST\" \"id:1529789,phase:2,deny,status:403,log,msg:'Credential stuffing with common weak passwords',chain\"\n    SecRule REQUEST_FILENAME \"@rx (?i)^/login$\" \"t:none,chain\"\n    SecRule REQUEST_BODY \"@rx (?i)username=(admin|root|administrator|test)&password=(admin|password|123456|toor|Welcome1|test)\" \"t:none,t:urlDecodeUni\"",
+      "brittle": false
+    },
+    {
+      "id": 6,
+      "kind": "sigma",
+      "title": "Credential stuffing with common weak passwords",
+      "status": "verified",
+      "tp": 18,
+      "fp": 0,
+      "total": 319,
+      "sessions_hit": 3,
+      "attempts": 1,
+      "group": "credential_attack",
+      "text": "# Credential stuffing with common weak passwords\n# Matches POST requests to the login endpoint submitting well-known default or weak credential pairs (admin/admin, admin/password, admin/123456, root/toor, administrator/Welcome1, test/test) which are c\n# not expressible as a Sigma web-log rule (web servers do not log request bodies); use the ModSecurity rule",
+      "brittle": false
+    },
+    {
+      "id": 7,
+      "kind": "nginx",
+      "title": "Sensitive file probe",
+      "status": "verified",
+      "tp": 30,
+      "fp": 0,
+      "total": 319,
+      "sessions_hit": 6,
+      "attempts": 2,
+      "group": "vuln_scanning",
+      "text": "# Sensitive file probe\n# Attackers request well-known sensitive files at root level (.env, .git/config, backup.zip, db.sql) that legitimate users never access legitimate zip files are under /downloads/.\nset $mr_1094923 \"\";\nif ($request_method = GET) { set $mr_1094923 \"${mr_1094923}M\"; }\nif ($uri ~* \"^/\\\\.(env|git/config)$|^/backup\\\\.zip$|^/db\\\\.sql$\") { set $mr_1094923 \"${mr_1094923}P\"; }\nif ($mr_1094923 = \"MP\") { return 403; }",
+      "brittle": false
+    },
+    {
+      "id": 8,
+      "kind": "modsecurity",
+      "title": "Sensitive file probe",
+      "status": "verified",
+      "tp": 30,
+      "fp": 0,
+      "total": 319,
+      "sessions_hit": 6,
+      "attempts": 2,
+      "group": "vuln_scanning",
+      "text": "# Sensitive file probe\nSecRule REQUEST_METHOD \"@streq GET\" \"id:1094923,phase:1,deny,status:403,log,msg:'Sensitive file probe',chain\"\n    SecRule REQUEST_FILENAME \"@rx (?i)^/\\.(env|git/config)$|^/backup\\.zip$|^/db\\.sql$\" \"t:none\"",
+      "brittle": false
+    },
+    {
+      "id": 9,
+      "kind": "sigma",
+      "title": "Sensitive file probe",
+      "status": "verified",
+      "tp": 30,
+      "fp": 0,
+      "total": 319,
+      "sessions_hit": 6,
+      "attempts": 2,
+      "group": "vuln_scanning",
+      "text": "title: 'Sensitive file probe'\nid: 9c53bd98-ab8c-5ca4-b898-06a898b0ffd2\nstatus: experimental\ndescription: 'Attackers request well-known sensitive files at root level (.env, .git/config, backup.zip, db.sql) that legitimate users never access legitimate zip files are under /downloads/.'\nauthor: Mirage honeypot analyst\nlogsource:\n    category: webserver\ndetection:\n  selection:\n    cs-method: GET\n    c-uri|re: '(?i)^/\\.(env|git/config)$|^/backup\\.zip$|^/db\\.sql$'\n  condition: selection\nlevel: medium\ntags:\n    - attack.t1595.002",
+      "brittle": false
+    },
+    {
+      "id": 10,
+      "kind": "nginx",
+      "title": "Admin panel enumeration",
+      "status": "verified",
+      "tp": 48,
+      "fp": 0,
+      "total": 319,
+      "sessions_hit": 6,
+      "attempts": 1,
+      "group": "vuln_scanning",
+      "text": "# Admin panel enumeration\n# Scanners systematically probe common admin panel paths legitimate traffic uses deeper, application-specific routes like /admin/audit.\nset $mr_1536110 \"\";\nif ($request_method = GET) { set $mr_1536110 \"${mr_1536110}M\"; }\nif ($uri ~* \"^/(admin|administrator|wp-login\\\\.php|phpmyadmin|console|server-status|cgi-bin|info\\\\.php|test)/?$\") { set $mr_1536110 \"${mr_1536110}P\"; }\nif ($mr_1536110 = \"MP\") { return 403; }",
+      "brittle": false
+    },
+    {
+      "id": 11,
+      "kind": "modsecurity",
+      "title": "Admin panel enumeration",
+      "status": "verified",
+      "tp": 48,
+      "fp": 0,
+      "total": 319,
+      "sessions_hit": 6,
+      "attempts": 1,
+      "group": "vuln_scanning",
+      "text": "# Admin panel enumeration\nSecRule REQUEST_METHOD \"@streq GET\" \"id:1536110,phase:1,deny,status:403,log,msg:'Admin panel enumeration',chain\"\n    SecRule REQUEST_FILENAME \"@rx (?i)^/(admin|administrator|wp-login\\.php|phpmyadmin|console|server-status|cgi-bin|info\\.php|test)/?$\" \"t:none\"",
+      "brittle": false
+    },
+    {
+      "id": 12,
+      "kind": "sigma",
+      "title": "Admin panel enumeration",
+      "status": "verified",
+      "tp": 48,
+      "fp": 0,
+      "total": 319,
+      "sessions_hit": 6,
+      "attempts": 1,
+      "group": "vuln_scanning",
+      "text": "title: 'Admin panel enumeration'\nid: 9981ffd9-0665-5508-a0c4-46163b9509ae\nstatus: experimental\ndescription: 'Scanners systematically probe common admin panel paths legitimate traffic uses deeper, application-specific routes like /admin/audit.'\nauthor: Mirage honeypot analyst\nlogsource:\n    category: webserver\ndetection:\n  selection:\n    cs-method: GET\n    c-uri|re: '(?i)^/(admin|administrator|wp-login\\.php|phpmyadmin|console|server-status|cgi-bin|info\\.php|test)/?$'\n  condition: selection\nlevel: medium\ntags:\n    - attack.t1595.002",
+      "brittle": false
+    },
+    {
+      "id": 13,
+      "kind": "nginx",
+      "title": "Injection payloads on auth endpoints",
+      "status": "verified",
+      "tp": 18,
+      "fp": 0,
+      "total": 319,
+      "sessions_hit": 3,
+      "attempts": 1,
+      "group": "vuln_scanning",
+      "text": "# Injection payloads on auth endpoints\n# Attackers append SQLi, path traversal, and XSS payloads to login/admin endpoints benign requests only carry harmless paging or tracking parameters.\n# note: nginx sees $args URL-encoded, so encoded variants may need extra patterns\nset $mr_1283502 \"\";\nif ($request_method = GET) { set $mr_1283502 \"${mr_1283502}M\"; }\nif ($uri ~* \"^/(admin|login)/?$\") { set $mr_1283502 \"${mr_1283502}P\"; }\nif ($args ~* \"(\\\\b|[?&])(id|file|q)=([^&]*(\\\\'|\\\\.\\\\./|<script|alert\\\\())\") { set $mr_1283502 \"${mr_1283502}Q\"; }\nif ($mr_1283502 = \"MPQ\") { return 403; }",
+      "brittle": false
+    },
+    {
+      "id": 14,
+      "kind": "modsecurity",
+      "title": "Injection payloads on auth endpoints",
+      "status": "verified",
+      "tp": 18,
+      "fp": 0,
+      "total": 319,
+      "sessions_hit": 3,
+      "attempts": 1,
+      "group": "vuln_scanning",
+      "text": "# Injection payloads on auth endpoints\nSecRule REQUEST_METHOD \"@streq GET\" \"id:1283502,phase:1,deny,status:403,log,msg:'Injection payloads on auth endpoints',chain\"\n    SecRule REQUEST_FILENAME \"@rx (?i)^/(admin|login)/?$\" \"t:none,chain\"\n    SecRule QUERY_STRING \"@rx (?i)(\\b|[?&])(id|file|q)=([^&]*(\\'|\\.\\./|<script|alert\\())\" \"t:none,t:urlDecodeUni\"",
+      "brittle": false
+    },
+    {
+      "id": 15,
+      "kind": "sigma",
+      "title": "Injection payloads on auth endpoints",
+      "status": "verified",
+      "tp": 18,
+      "fp": 0,
+      "total": 319,
+      "sessions_hit": 3,
+      "attempts": 1,
+      "group": "vuln_scanning",
+      "text": "title: 'Injection payloads on auth endpoints'\nid: 6c207e90-f73c-5da3-b81e-142411ce8f40\nstatus: experimental\ndescription: 'Attackers append SQLi, path traversal, and XSS payloads to login/admin endpoints benign requests only carry harmless paging or tracking parameters.'\nauthor: Mirage honeypot analyst\nlogsource:\n    category: webserver\ndetection:\n  selection:\n    cs-method: GET\n    c-uri|re: '(?i)^/(admin|login)/?$'\n    cs-uri-query|re: '(?i)(\\b|[?&])(id|file|q)=([^&]*(\\''|\\.\\./|<script|alert\\())'\n  condition: selection\nlevel: medium\ntags:\n    - attack.t1190",
+      "brittle": false
+    }
+  ],
+  "notes": {
+    "verified_specs": 4,
+    "rejected_specs": 1,
+    "benign_events": 52,
+    "malicious_events": 267
+  },
+  "cves": [
+    "CVE-2013-0156",
+    "CVE-2013-6786",
+    "CVE-2014-2126",
+    "CVE-2014-2127",
+    "CVE-2014-2128",
+    "CVE-2018-12613",
+    "CVE-2021-41773",
+    "CVE-2021-42013",
+    "CVE-2021-44790",
+    "CVE-2022-0813",
+    "CVE-2022-28330",
+    "CVE-2022-28614",
+    "CVE-2022-36760",
+    "CVE-2023-34362",
+    "CVE-2024-2961",
+    "CVE-2025-65647",
+    "CVE-2026-42356",
+    "CVE-2026-42528",
+    "CVE-2026-46729",
+    "CVE-2026-47360",
+    "CVE-2026-48005",
+    "CVE-2026-56153",
+    "CVE-2026-56154",
+    "CVE-2026-56449",
+    "CVE-2026-57941",
+    "CVE-2026-58415",
+    "CVE-2026-59685",
+    "CVE-2026-59797",
+    "CVE-2026-63045",
+    "CVE-2026-63292",
+    "CVE-2026-63686",
+    "CVE-2026-63718",
+    "CVE-2026-73636",
+    "CVE-2026-73637",
+    "CVE-2026-79768",
+    "CVE-2026-93546"
+  ]
+}

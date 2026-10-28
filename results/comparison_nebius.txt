@@ -1,0 +1,25 @@
+                                             static    mirage   ratio
+---------------------------------------------------------------------
+Attacker sessions                                12        12        
+Requests the attackers made                     267       267    1.0x
+Distinct pages that returned content             54       144    2.7x
+Attack payloads sent / answered (not 404)    30 / 0   30 / 24        
+Responses that were dead-end 404s               79%       25%        
+Responses improvised by the model                0%       22%        
+Login POSTs answered (not 404)                   0%      100%        
+Model failures (fell back to 404)                 0         0        
+
+Mirage generation: 59 model calls, median 3804 ms, p90 4605 ms, 26764 completion tokens
+
+Distinct pages that returned content, per attacker profile (static -> mirage):
+  recon       9 -> 9     payloads answered 0/0 -> 0/0
+  scanner    12 -> 12    payloads answered 0/30 -> 24/30
+  brute       3 -> 3     payloads answered 0/0 -> 0/0
+  crawler    30 -> 120   payloads answered 0/0 -> 0/0
+
+Per run (pages that returned content, static -> mirage):
+  run 1: 18 -> 48
+  run 2: 18 -> 48
+  run 3: 18 -> 48
+
+Note: each attacker profile stops after 40 requests per run. Sessions that hit that cap: static 3, mirage 3. For those sessions the counts above are lower bounds.

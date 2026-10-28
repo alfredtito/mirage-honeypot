@@ -1,0 +1,238 @@
+{
+  "static": {
+    "totals": {
+      "requests": 267,
+      "distinct_paths": 219,
+      "reached_pages": 54,
+      "payloads": 30,
+      "payloads_answered": 0,
+      "posts": 18,
+      "posts_answered": 0,
+      "improvised": 0,
+      "dead_ends": 210,
+      "model_failures": 0,
+      "sessions": 12,
+      "capped_sessions": 3,
+      "cap": 40
+    },
+    "per_profile": {
+      "recon": {
+        "requests": 36,
+        "distinct_paths": 33,
+        "reached_pages": 9,
+        "payloads": 0,
+        "payloads_answered": 0,
+        "posts": 0,
+        "posts_answered": 0,
+        "improvised": 0,
+        "dead_ends": 24,
+        "model_failures": 0,
+        "sessions": 3
+      },
+      "scanner": {
+        "requests": 90,
+        "distinct_paths": 63,
+        "reached_pages": 12,
+        "payloads": 30,
+        "payloads_answered": 0,
+        "posts": 0,
+        "posts_answered": 0,
+        "improvised": 0,
+        "dead_ends": 78,
+        "model_failures": 0,
+        "sessions": 3
+      },
+      "brute": {
+        "requests": 21,
+        "distinct_paths": 3,
+        "reached_pages": 3,
+        "payloads": 0,
+        "payloads_answered": 0,
+        "posts": 18,
+        "posts_answered": 0,
+        "improvised": 0,
+        "dead_ends": 18,
+        "model_failures": 0,
+        "sessions": 3
+      },
+      "crawler": {
+        "requests": 120,
+        "distinct_paths": 120,
+        "reached_pages": 30,
+        "payloads": 0,
+        "payloads_answered": 0,
+        "posts": 0,
+        "posts_answered": 0,
+        "improvised": 0,
+        "dead_ends": 90,
+        "model_failures": 0,
+        "sessions": 3
+      }
+    },
+    "per_run": {
+      "1": {
+        "requests": 89,
+        "distinct_paths": 73,
+        "reached_pages": 18,
+        "payloads": 10,
+        "payloads_answered": 0,
+        "posts": 6,
+        "posts_answered": 0,
+        "improvised": 0,
+        "dead_ends": 70,
+        "model_failures": 0,
+        "sessions": 4
+      },
+      "2": {
+        "requests": 89,
+        "distinct_paths": 73,
+        "reached_pages": 18,
+        "payloads": 10,
+        "payloads_answered": 0,
+        "posts": 6,
+        "posts_answered": 0,
+        "improvised": 0,
+        "dead_ends": 70,
+        "model_failures": 0,
+        "sessions": 4
+      },
+      "3": {
+        "requests": 89,
+        "distinct_paths": 73,
+        "reached_pages": 18,
+        "payloads": 10,
+        "payloads_answered": 0,
+        "posts": 6,
+        "posts_answered": 0,
+        "improvised": 0,
+        "dead_ends": 70,
+        "model_failures": 0,
+        "sessions": 4
+      }
+    },
+    "generation": {
+      "calls": 0,
+      "median_ms": null,
+      "p90_ms": null,
+      "completion_tokens": 0
+    }
+  },
+  "mirage": {
+    "totals": {
+      "requests": 267,
+      "distinct_paths": 219,
+      "reached_pages": 144,
+      "payloads": 30,
+      "payloads_answered": 24,
+      "posts": 18,
+      "posts_answered": 18,
+      "improvised": 59,
+      "dead_ends": 66,
+      "model_failures": 0,
+      "sessions": 12,
+      "capped_sessions": 3,
+      "cap": 40
+    },
+    "per_profile": {
+      "recon": {
+        "requests": 36,
+        "distinct_paths": 33,
+        "reached_pages": 9,
+        "payloads": 0,
+        "payloads_answered": 0,
+        "posts": 0,
+        "posts_answered": 0,
+        "improvised": 1,
+        "dead_ends": 21,
+        "model_failures": 0,
+        "sessions": 3
+      },
+      "scanner": {
+        "requests": 90,
+        "distinct_paths": 63,
+        "reached_pages": 12,
+        "payloads": 30,
+        "payloads_answered": 24,
+        "posts": 0,
+        "posts_answered": 0,
+        "improvised": 10,
+        "dead_ends": 45,
+        "model_failures": 0,
+        "sessions": 3
+      },
+      "brute": {
+        "requests": 21,
+        "distinct_paths": 3,
+        "reached_pages": 3,
+        "payloads": 0,
+        "payloads_answered": 0,
+        "posts": 18,
+        "posts_answered": 18,
+        "improvised": 18,
+        "dead_ends": 0,
+        "model_failures": 0,
+        "sessions": 3
+      },
+      "crawler": {
+        "requests": 120,
+        "distinct_paths": 120,
+        "reached_pages": 120,
+        "payloads": 0,
+        "payloads_answered": 0,
+        "posts": 0,
+        "posts_answered": 0,
+        "improvised": 30,
+        "dead_ends": 0,
+        "model_failures": 0,
+        "sessions": 3
+      }
+    },
+    "per_run": {
+      "1": {
+        "requests": 89,
+        "distinct_paths": 73,
+        "reached_pages": 48,
+        "payloads": 10,
+        "payloads_answered": 8,
+        "posts": 6,
+        "posts_answered": 6,
+        "improvised": 47,
+        "dead_ends": 22,
+        "model_failures": 0,
+        "sessions": 4
+      },
+      "2": {
+        "requests": 89,
+        "distinct_paths": 73,
+        "reached_pages": 48,
+        "payloads": 10,
+        "payloads_answered": 8,
+        "posts": 6,
+        "posts_answered": 6,
+        "improvised": 6,
+        "dead_ends": 22,
+        "model_failures": 0,
+        "sessions": 4
+      },
+      "3": {
+        "requests": 89,
+        "distinct_paths": 73,
+        "reached_pages": 48,
+        "payloads": 10,
+        "payloads_answered": 8,
+        "posts": 6,
+        "posts_answered": 6,
+        "improvised": 6,
+        "dead_ends": 22,
+        "model_failures": 0,
+        "sessions": 4
+      }
+    },
+    "generation": {
+      "calls": 59,
+      "median_ms": 3804,
+      "p90_ms": 4605,
+      "completion_tokens": 26764
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.env
+*.db
+*.db-wal
+*.db-shm
+__pycache__/
+.venv/
+.pytest_cache/
+.env*
+!.env.example
+ab_work*/
+preview.*
+.idea/
+ab_report*.txt
+ab_results*.json
+analysis_latest.json
