@@ -9,7 +9,7 @@
 | | |
 |---|---|
 | Demo (static export of real output) | (https://about-mirage.netlify.app/) |
-| Demo video (under 3 minutes) | REPLACE_WITH_YOUTUBE_URL |
+| Demo video (under 3 minutes) | (https://www.youtube.com/watch?v=Ki-2Klvj4c0)|
 | Models | NVIDIA **Nemotron 3 Nano 30B-A3B** (live responses) and **Nemotron 3 Ultra 550B-A55B** (analysis), served by **Nebius Token Factory** |
 | Web search | **Tavily** (CVE leads for the analyst) |
 
